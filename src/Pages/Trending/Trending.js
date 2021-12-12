@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import MediaContent from "../../components/MediaContent/MediaContent";
+import "./Trending.css";
 
 const Trending = () => {
   const [content, setContent] = useState();
