@@ -3,15 +3,14 @@ import { img_300, unavailable } from "../../config/config";
 import "./MediaContent.css";
 
 const setRatingClass = (score) => {
-  if (score >= 8) {
+  if (score >= 8 || score >= 7.5) {
     return "green";
-  } else if (score >= 6) {
-    return "yellow";
+  } else if (score >= 6 || score >= 6.5) {
+    return "orange";
   } else {
     return "red";
   }
 };
-
 const MediaContent = ({
   id,
   poster,
@@ -23,10 +22,10 @@ const MediaContent = ({
 }) => {
   return (
     <div className="media">
-      <Badge badgeContent={vote_average} color="primary" />
-      {/* <span className={`tag ${setRatingClass(vote_average)}`}>
+      {/* <Badge className="badgeIcon" badgeContent={vote_average} /> */}
+      <span className={`tag ${setRatingClass(vote_average)}`}>
         {vote_average}
-      </span> */}
+      </span>
       <img
         className="poster"
         src={poster ? `${img_300}/${poster}` : unavailable}

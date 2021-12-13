@@ -41,6 +41,12 @@
   }
 }
 
+/* .badgeIcon {
+  color: rgb(82, 182, 36);
+  z-index: 100;
+  padding-top: 8px;
+} */
+
 .poster {
   border-radius: 10px;
   justify-content: space-around;
@@ -119,26 +125,41 @@
   overflow: auto;
 }
 
+/* .media-overview h2,
+p {
+  color: transparent;
+} */
+
 .media:hover .media-overview {
   transform: translateY(0%);
 }
 
 .tag {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
   padding: 0.5rem;
-  float: right;
   font-weight: bold;
   border-radius: 50px;
-  overflow: hidden;
 }
 
 .tag.green {
+  border: none;
+  margin: none;
+  padding: none;
   color: rgb(5, 184, 5);
 }
 
 .tag.orange {
+  border: none;
+  margin: none;
+  padding: none;
   color: orange;
 }
 
 .tag.red {
+  border: none;
+  margin: none;
+  padding: none;
   color: red;
 }
