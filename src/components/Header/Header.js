@@ -1,10 +1,11 @@
 import "./Header.css";
+import "../../../src/App";
 
 const Header = () => {
   return (
-    <div>
-      <span className="header">🎥 Media Entertainment 🎥 </span>
-    </div>
+    <span onClick={() => window.scroll(0, 0)} className="header">
+      🎥 Media Entertainment 🎥{" "}
+    </span>
   );
 };
 

@@ -1,3 +1,4 @@
+import { Badge } from "@mui/material";
 import { img_300, unavailable } from "../../config/config";
 import "./MediaContent.css";
 
@@ -22,6 +23,7 @@ const MediaContent = ({
 }) => {
   return (
     <div className="media">
+      <Badge badgeContent={vote_average} color="primary" />
       {/* <span className={`tag ${setRatingClass(vote_average)}`}>
         {vote_average}
       </span> */}
