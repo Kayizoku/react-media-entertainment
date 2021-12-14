@@ -1,5 +1,5 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Button, TextField } from "@mui/material";
+import { Button, Tab, Tabs, TextField } from "@mui/material";
 import { useState } from "react";
 import SearchIcon from "@material-ui/icons/Search";
 
@@ -31,6 +31,11 @@ const Search = () => {
             <SearchIcon />
           </Button>
         </div>
+
+        <Tabs value={type} indicatorColor="primary" textColor="primary">
+          <Tab style={{ width: "50%" }} label="Search Movies"></Tab>
+          <Tab style={{ width: "50%" }} label="Search TV Shows"></Tab>
+        </Tabs>
       </ThemeProvider>
     </div>
   );
