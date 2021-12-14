@@ -110,11 +110,11 @@
   line-height: 1.5;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background-color: #373b69;
+  background-color: #2d313a;
   box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
   transform: translateY(102%);
   transition: transform 0.3s ease-in-out;
-  border: 2px solid #4b51a8;
+  border: 2px solid #1f2125;
   position: absolute;
   color: #ffffff;
   padding: 1rem;

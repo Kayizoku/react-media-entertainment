@@ -1,6 +1,5 @@
 import Pagination from "@mui/material/Pagination";
 import "./CustomPagination.css";
-import React, { useState } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const darkTheme = createTheme({

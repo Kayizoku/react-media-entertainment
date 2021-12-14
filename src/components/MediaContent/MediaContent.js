@@ -1,4 +1,3 @@
-import { Badge } from "@mui/material";
 import { img_300, unavailable } from "../../config/config";
 import "./MediaContent.css";
 
